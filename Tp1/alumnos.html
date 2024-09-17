@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alumnos</title>
+    <script src="getInfoFromStorage.js"></script>
+</head>
+<body>
+    <div class="sidebar-layout">
+        <nav class="sidebar">
+            <h3>Trabajo Práctico 1</h3>
+            <ul>
+                <a href="index.html" >Página Principal</a>
+                <a href="alumnos.html" class="selected">Alumnos</a>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <header class="header">
+                <h2>Alumnos</h2>
+                <a href="studentForm.html"><button type="button" id="addButton">Agregar</button></a>
+              </header>
+            <div class="table-content">
+            <table>
+                <thead>
+                <tr>
+                    <th>Legajo</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                </thead>
+                <tbody id="student_table"></tbody>
+            </div>
+    
+            <div class="search-pagination">
+                <input type="text" id="searching" name="searching" maxlength="12" placeholder="Buscar por apellido" required/>
+                <button type="button" id="searchButton">Buscar</button>
+            </div>
+            </table>
+    
+            <div id="pagination">
+                <select>
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10 selected">10</option>
+                    <option value="20">20</option>
+                </select>
+                <button type="button" id="prevButton">Anterior</button>
+                <span id="pageNumber">1</span>
+                <button type="button" id="nextButton">Siguiente</button>
+            </div>
+        </div>
+
+
+        
+    </div>
+</body>
+<script src="showTable.js"></script>
+</html>

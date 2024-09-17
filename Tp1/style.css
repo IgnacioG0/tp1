@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+.sidebar-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: darkturquoise;
+    padding-left: 20px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+  
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+}
+  
+.sidebar a.selected {
+    background-color: white;
+    padding-left: 10px;
+    font-weight: 700;
+}
+  
+.sidebar a:hover {
+    background-color: paleturquoise;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+    background-color: #f9f9f9;
+}
+  
+.header h2 {
+    margin: 0;
+}
+
+.main-content {
+    padding-top: 20px;
+    flex-grow: 1
+
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+ .card {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+ .card h1 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#addButton {
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+#addButton:hover {
+    opacity: 0.9;
+}
+
+.search-pagination {
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+  
+.search-pagination input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+table th, table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+
+#pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+  
+#pagination select, .pagination button {
+    margin-left: 10px;
+    padding: 5px;
+}
+  
+.student-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.student-form label {
+    display: flex;
+    align-items: center;
+}
+  
+.student-form input {
+    padding: 5px;
+}
+  
+#backToButton {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#backToButton:hover {
+    opacity: 0.9;
+}
+
+#submitButton {
+    width: 70px;
+    background-color: darkturquoise;
+    color: white;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    border-radius: 5px;
+}
